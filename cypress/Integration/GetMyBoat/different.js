@@ -7,8 +7,8 @@ let myBeforeCount = 0;
 // This verifies that the hooks work with bundling feature
 // https://github.com/TheBrainFamily/cypress-cucumber-preprocessor/pull/234
 Before(() => {
-  expect(myBeforeCount).to.be.lessThan(2);
-  myBeforeCount += 1;
+ // expect(myBeforeCount).to.be.lessThan(2);
+//  myBeforeCount += 1;
 });
 
 Given(`I kinda open Google page`, () => {
