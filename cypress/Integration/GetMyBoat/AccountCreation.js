@@ -22,7 +22,7 @@ And(`I enter Email Address as {string}`, (emailAddress) => {
 });
 
 And(`Choose country {string}`, (country) => {
-  cy.get('select[aria-label="Phone number country"]').type(country);
+  cy.get('select[aria-label="Phone number country"]').select(country);
 });
 
 And(`I enter Phone Number as {string}`, (phoneNumber) => {

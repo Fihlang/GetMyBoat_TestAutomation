@@ -30,3 +30,14 @@ Scenario: Open GetMyBoat page
     When I click the SignIn button
     Then I expect an error message "Unable to log in with provided credentials." to be displayed
 
+
+  @focus 
+  Scenario: Search for a destination
+    Given I am on the Home page
+    And I search for "Cape Town, South Africa"
+    And I choose "1 Hour Marine Wildlife Boat Tour - Clifton" boat to hire
+    When I click Send a booking Inquiry 
+    Then I expect a pop-up with "We’ll ask you a few questions so the listing owner can send you a custom price, itinerary and more information. No commitment or credit card needed." message to be displayed
+
+
+
